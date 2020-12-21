@@ -1,14 +1,9 @@
 % Representation-Free Model Predictive Control for Dynamic Quadruped Panther
 % Author: Yanran Ding
 % Last modified: 2020/12/21
-% 
-% Code accompanying the paper:
-% Yanran Ding, Abhishek Pandala, Chuanzheng Li, Young-Ha Shin, Hae-Won Park
-% "Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds"
-% Transactions on Robotics
-% 
-% preprint available at: https://arxiv.org/abs/2012.10002
-% video available at: https://www.youtube.com/watch?v=iMacEwQisoQ&t=101s
+
+
+
 
 %% initialization
 clear all;close all;clc
