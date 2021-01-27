@@ -40,12 +40,22 @@ The code for QP formulation is in
 ```
 The QP could be solved by either the MATLAB QP solver *quadprog* or a efficient QP solver qpSWIFT (coming soon!)
 
-
+## How to cite
+    @ARTICLE{9321699,
+    author={Y. {Ding} and A. {Pandala} and C. {Li} and Y. -H. {Shin} and H. -W. {Park}},
+    journal={IEEE Transactions on Robotics}, 
+    title={Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds}, 
+    year={2021},
+    volume={},
+    number={},
+    pages={1-18},
+    doi={10.1109/TRO.2020.3046415}}
 
 ## References
 This code is based on the following publications:
+* Yanran Ding, Abhishek Pandala, Chuanzheng Li, Young-Ha Shin, Hae-Won Park "Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds". In IEEE Transactions on Robotics. [PDF](https://ieeexplore.ieee.org/document/9321699)
 * Yanran Ding, Abhishek Pandala, and Hae-Won Park. "Real-time model predictive control for versatile dynamic motions in quadrupedal robots". In IEEE 2019 International Conference on Robotics and Automation (ICRA). [PDF](https://ieeexplore.ieee.org/abstract/document/8793669)
-* Yanran Ding, Abhishek Pandala, Chuanzheng Li, Young-Ha Shin, Hae-Won Park "Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds". In IEEE Transactions on Robotics. [PDF](https://arxiv.org/abs/2012.10002)
+
 
 ## Authors
 [Yanran Ding](https://sites.google.com/view/yanranding/home) - Initial Work/Maintainer
