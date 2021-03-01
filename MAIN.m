@@ -17,7 +17,7 @@ addpath fcns fcns_MPC
 %% --- parameters ---
 % ---- gait ----
 % 0-trot; 1-bound; 2-pacing 3-gallop; 4-trot run; 5-crawl
-gait = 3;
+gait = 1;
 p = get_params(gait);
 p.playSpeed = 1;
 p.flag_movie = 1;       % 1 - make movie

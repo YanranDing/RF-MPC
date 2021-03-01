@@ -69,16 +69,16 @@ s = (t - Ta) / (Tb - Ta);
 s(s<0) = 0;
 s(s>1) = 1;
 
-FSM_ = zeros(1,p.n_hor);
-s_ = zeros(1,p.n_hor);
+FSM_ = zeros(1,p.predHorizon);
+s_ = zeros(1,p.predHorizon);
 
-Ud = zeros(12,p.n_hor);
-Xd = repmat(Xt,[1,p.n_hor]);
+Ud = zeros(12,p.predHorizon);
+Xd = repmat(Xt,[1,p.predHorizon]);
 
 pd = [0;0];
 dpd = [0;0];
 
-for ii = 1:p.n_hor
+for ii = 1:p.predHorizon
 %%%%%%% Xd/Ud along the prediction horizon %%%%%%%%%%
 [FSM_(ii),s_(ii)] = fcn_FSM_pred_hor(FSM,Ta,t_(ii),p);
 FSM_(1) = FSM;
@@ -209,8 +209,8 @@ elseif FSM == 4
     end
 end
 
-Xd(idx_pf,:) = repmat(pfd,[1,p.n_hor]);
-Xd = repmat(Xd(:,1),[1,p.n_hor]);
+Xd(idx_pf,:) = repmat(pfd,[1,p.predHorizon]);
+Xd = repmat(Xd(:,1),[1,p.predHorizon]);
 
 %% output
 FSMout = FSM;
