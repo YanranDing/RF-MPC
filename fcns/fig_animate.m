@@ -3,8 +3,14 @@ function [t,EA,EAd] = fig_animate(tout,Xout,Uout,Xdout,Udout,Uext,p)
 flag_movie = p.flag_movie;
 
 if flag_movie
-    name = ['test.mp4'];
-    vidfile = VideoWriter(name,'MPEG-4');
+    
+    try
+        name = ['test.mp4'];
+        vidfile = VideoWriter(name,'MPEG-4');
+    catch ME
+        name = ['test'];
+        vidfile = VideoWriter(name,'Motion JPEG AVI');
+    end
     open(vidfile);
 end
 
