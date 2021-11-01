@@ -21,7 +21,7 @@ gait = 1;
 p = get_params(gait);
 p.playSpeed = 1;
 p.flag_movie = 1;       % 1 - make movie
-use_qpSWIFT = 0;        % 0 - quadprog, 1 - qpSWIFT (external)
+use_qpSWIFT = 1;        % 0 - quadprog, 1 - qpSWIFT (external)
 
 dt_sim = p.simTimeStep;
 SimTimeDuration = 0.5;  % [sec]

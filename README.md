@@ -10,7 +10,7 @@ video available at: [YouTube Video](https://www.youtube.com/watch?v=iMacEwQisoQ&
 ## Requirement
 Basic: MATLAB and MATLAB optimization toolbox
 
-Optional: qpSWIFT (an efficient QP solver to MPC problems)
+Optional: qpSWIFT (can be obtained from https://github.com/qpSWIFT)
 
 ## Installation
 There is no need to install external packages.
