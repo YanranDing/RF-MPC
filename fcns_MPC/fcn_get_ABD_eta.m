@@ -81,7 +81,7 @@ temp_J_w = hatMap(J*wop) - hatMap(wop) * J;
 sum_fop = [eye(3),eye(3),eye(3),eye(3)] * fop;
 
 Cx = Rop' * hatMap(sum_fop);
-Ceta = fcn_get_F(Mop) * N - temp_J_w * hatMap(wop);
+Ceta = fcn_get_F(Rop'*Mop) * N - temp_J_w * hatMap(wop);
 Cw = temp_J_w;
 Cu = Rop' * [hatMap(r1),hatMap(r2),hatMap(r3),hatMap(r4)];
 Cc = -hatMap(wop)*J*wop + Rop'*Mop - temp_J_w * wop - Cx*xop;
